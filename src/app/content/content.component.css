@@ -1,0 +1,18 @@
+.bloc-parent {
+    border-radius: 30px;
+    margin: 5px;
+    width: 25%; 
+    margin: 10px; 
+    padding: 10px; 
+}
+
+.bloc-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+
+h2 {
+    margin: auto;
+}

@@ -1,0 +1,46 @@
+<div *ngIf="listeCommunes">
+  <div class="bloc-container">
+    <div *ngFor="let commune of listeCommunes" [ngStyle]="{'border': couleurProvince(commune.Province, commune.Superficie)}" class="bloc-parent">
+      <div class="bloc">
+        <br>  
+        <table>
+          <tr>
+            <td><h2 [style.font-size.px]="tailleCommune(commune.Population)">{{ commune.Nom }}</h2></td>
+          </tr>
+        <tr>
+          <td>Province</td>
+          <td>{{ commune.Province }}</td>
+        </tr>
+        <tr>
+          <td>Population</td>
+          <td>{{ commune.Population }}</td>
+        </tr>
+        <tr>
+          <td>Superficie</td>
+          <td>{{ commune.Superficie }}</td>
+        </tr>
+        <tr>
+          <td>Densité Population</td>
+          <td>{{ commune.DensitePopulation }}</td>
+        </tr>
+        <tr>
+          <td>Code Postal</td>
+          <td>{{ commune.CodePostal }}</td>
+        </tr>
+        <tr>
+          <td>Code Insee</td>
+          <td>{{ commune.CodeInsee }}</td>
+        </tr>
+        <tr>
+          <td>latitude</td>
+          <td>{{ commune.latitude }}</td>
+        </tr>
+        <tr>
+          <td>longitude</td>
+          <td>{{ commune.longitude }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
